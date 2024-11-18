@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;  /* تغيير الخط */
+    line-height: 1.8;  /* زيادة المسافة بين الأسطر */
+    background-color: #e0e0e0;  /* تغيير لون الخلفية */
 }
 
 header {
-    background-color: #333;
+    background-color: #444;  /* تغيير لون خلفية الهيدر */
     color: white;
     padding: 15px 0;
 }
@@ -33,11 +33,11 @@ header {
 }
 
 .hero {
-    background-image: url('images/hero.jpg');
+    background-image: url('images/hero2.jpg');  /* تغيير صورة الخلفية */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;  /* تغيير المسافة */
     text-align: center;
 }
 
@@ -47,17 +47,17 @@ header {
 }
 
 .cta-btn {
-    background-color: #f39c12;
-    padding: 10px 20px;
+    background-color: #27ae60;  /* تغيير اللون الأساسي للأزرار */
+    padding: 15px 25px;  /* زيادة حجم الزر */
     text-decoration: none;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;  /* زيادة استدارة الزر */
     transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #e67e22;
+    background-color: #2ecc71;  /* تغيير لون الزر عند المرور عليه */
 }
 
 .leistungen {
@@ -135,4 +135,32 @@ footer ul li {
 footer ul li a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .leistung-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
