@@ -1,7 +1,4 @@
-// Example: JavaScript for interactive elements
-
+// Example JavaScript (can be expanded for interactivity)
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Website loaded successfully!");
-
-    // You can add more JavaScript functionality, such as form validation, modal dialogs, or animations
+    console.log("Website loaded");
 });
