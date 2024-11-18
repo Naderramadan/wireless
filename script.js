@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Adding a scroll event to change navbar style when scrolling
+// Scroll event for changing header background
 window.addEventListener('scroll', function() {
     let header = document.querySelector('header');
     let scrollPos = window.scrollY;
@@ -55,10 +55,4 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.classList.remove('sticky');
     }
-});
-
-// Implementing language toggle (example for the future integration of multilingual support)
-const languageToggle = document.querySelector('.language-toggle');
-languageToggle.addEventListener('click', function() {
-    alert('This feature is under construction! Language toggle is not implemented yet.');
 });
