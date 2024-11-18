@@ -5,31 +5,46 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
     color: white;
-    padding: 15px 0;
+    padding: 20px 40px;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    color: #f39c12;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: center;
     list-style: none;
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
 }
 
 .hero {
@@ -37,13 +52,14 @@ header {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
 .hero-content h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
 .cta-btn {
@@ -136,3 +152,4 @@ footer ul li a {
     color: white;
     text-decoration: none;
 }
+
