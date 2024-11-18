@@ -6,7 +6,6 @@
 }
 
 body {
-    body {
     background-image: url('background.jpg');
     background-size: cover; /* Ensures the background covers the entire page */
     background-position: center center; /* Centers the background image */
