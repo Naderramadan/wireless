@@ -1,279 +1,121 @@
-/* Resetting and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boden Eleganz - Spezialist für Holzfußböden und Malerarbeiten">
+    <meta name="keywords" content="Holzboden, Bodenbeläge, Malerarbeiten, Innenräume, Boden Eleganz">
+    <title>Boden Eleganz - Holzboden und Malerarbeiten</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Boden Eleganz</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#startseite">Startseite</a></li>
+                <li><a href="#ueber-uns">Über uns</a></li>
+                <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1c1c1c;
-    padding: 20px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
+    <!-- Hero Section -->
+    <section id="startseite" class="hero">
+        <div class="hero-content">
+            <h1>Professionelle Holzbodeninstallation und Malerarbeiten</h1>
+            <p>Verleihen Sie Ihrem Raum Eleganz und Stil mit den besten Holzböden und Malerarbeiten.</p>
+            <a href="#dienstleistungen" class="cta-btn">Unsere Dienstleistungen</a>
+        </div>
+    </section>
 
-.navbar .logo a {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-}
+    <!-- About Us Section -->
+    <section id="ueber-uns" class="about">
+        <div class="container">
+            <h2>Über uns</h2>
+            <p>Boden Eleganz ist Ihr professioneller Partner für die Installation von hochwertigen Holzböden und Malerarbeiten. Mit einem Fokus auf Qualität und Kundenzufriedenheit bieten wir Ihnen maßgeschneiderte Lösungen für Ihr Zuhause oder Büro.</p>
+        </div>
+    </section>
 
-.navbar .nav-links {
-    display: flex;
-    list-style: none;
-}
+    <!-- Services Section -->
+    <section id="dienstleistungen" class="services">
+        <div class="container">
+            <h2>Unsere Dienstleistungen</h2>
+            <div class="service-cards">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="images/holzboden.jpg" alt="Holzboden Installation">
+                    <h3>Holzboden Installation</h3>
+                    <p>Wählen Sie aus einer Vielzahl von Holzarten und Designs für Ihre individuellen Bedürfnisse.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="images/malerarbeiten.jpg" alt="Malerarbeiten">
+                    <h3>Malerarbeiten</h3>
+                    <p>Frischen Sie Ihr Zuhause mit professionellen Malerarbeiten und stilvollen Farbkonzepten auf.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="images/renovierung.jpg" alt="Renovierung">
+                    <h3>Renovierung & Reparatur</h3>
+                    <p>Verleihen Sie Ihrem Raum neuen Glanz durch Renovierungen und Reparaturen von Fachleuten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.navbar .nav-links li {
-    margin-left: 30px;
-}
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2>Unsere Arbeiten</h2>
+            <div class="image-gallery">
+                <img src="images/01.jpg" alt="Projekt 1">
+                <img src="images/02.jpg" alt="Projekt 2">
+                <img src="images/03.jpg" alt="Projekt 3">
+                <img src="images/04.jpg" alt="Projekt 4">
+                <img src="images/05.jpg" alt="Projekt 5">
+                <img src="images/06.jpg" alt="Projekt 6">
+            </div>
+        </div>
+    </section>
 
-.navbar .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Kontaktieren Sie uns gerne!</p>
+            <ul>
+                <li><strong>Adresse:</strong> Musterstraße 123, 12345 Stadt</li>
+                <li><strong>Telefon:</strong> +49 123 456789</li>
+                <li><strong>Email:</strong> info@bodeneleganz.de</li>
+            </ul>
+        </div>
+    </section>
 
-.navbar .nav-links li a:hover {
-    color: #ff6f61;
-}
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Boden Eleganz | Alle Rechte vorbehalten</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 
-/* Hamburger Menu */
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.hero-content p {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background-color: #ff6f61;
-    padding: 12px 25px;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.cta-btn:hover {
-    background-color: #e65c4f;
-}
-
-/* About Us Section */
-.about {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.about p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
-}
-
-/* Services Section */
-.services {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    width: 30%;
-    min-width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.service-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.gallery h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.image-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Contact Section */
-.contact {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact ul {
-    list-style: none;
-    margin-top: 30px;
-    font-size: 1.2rem;
-}
-
-.contact ul li {
-    margin: 10px 0;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .social-media {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-footer .social-media li {
-    margin: 0 15px;
-}
-
-footer .social-media li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .social-media li a:hover {
-    color: #ff6f61;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        background-color: #333;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-        text-align: center;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .service-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .image-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
