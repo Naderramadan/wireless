@@ -1,39 +1,36 @@
-/* تخصيص الصور لتكون بحجم متناغم في جميع أنحاء الموقع */
-
-.image-gallery img, .product-card img, .leistung-card img {
-    width: 100%; /* اجعل الصور تأخذ عرض الحاوية */
-    height: 250px; /* حدّد ارتفاع موحد لكل الصور */
-    object-fit: cover; /* التأكد من تناسق الصورة وعدم تشويهها */
-    border-radius: 8px; /* إضافة حواف مستديرة للصور */
-    transition: transform 0.3s ease; /* إضافة تأثير عند التفاعل مع الصور */
+/* تنسيق النصوص */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.image-gallery img:hover, .product-card img:hover, .leistung-card img:hover {
-    transform: scale(1.05); /* تأثير تكبير عند التفاعل مع الصور */
-}
-
-/* تخصيص بطاقات الخدمات */
-.leistung-card {
-    background-color: #fff;
-    padding: 40px;
-    margin: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 300px;
+/* الشريط العلوي */
+.navbar {
+    background-color: #00048f;
+    padding: 15px;
     text-align: center;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* إخفاء أي جزء من الصورة قد يتجاوز البطاقة */
 }
 
-.leistung-card i {
-    font-size: 50px;
-    color: #00048f; /* اللون الجديد الأزرق */
-    margin-bottom: 20px;
+.navbar ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* تخصيص تنسيق الصور في صفحة الهيرو */
-.hero {
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* الهيرو */
+#hero {
     background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -42,11 +39,49 @@
     text-align: center;
 }
 
-/* تخصيص الظهر في صفحة المنتجات */
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #00048f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+}
+
+/* تخصيص المنتجات */
+#produkte {
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+}
+
 .product-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 .product-card img {
@@ -54,14 +89,6 @@
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.product-card {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
 }
 
 .product-card:hover {
@@ -79,9 +106,84 @@
     color: #555;
 }
 
-/* التأكد من تنسيق الصور في كل أقسام المعرض */
-.gallery, .product-cards, .leistung-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
+/* تخصيص البطاقات الخدمات */
+.leistung-card {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leistung-card i {
+    font-size: 50px;
+    color: #00048f; 
+    margin-bottom: 20px;
+}
+
+.leistung-card:hover {
+    transform: scale(1.05);
+}
+
+/* تخصيص الصور */
+.product-card img, .leistung-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* تخصيص الفوتر */
+footer {
+    background-color: #00048f;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media li a:hover {
+    color: #ddd;
+}
+
+/* تخصيص الأجهزة المحمولة */
+@media (max-width: 768px) {
+    .navbar ul {
+        text-align: center;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .leistung-card {
+        width: 45%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
 }
