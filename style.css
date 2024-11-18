@@ -1,98 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* تخصيص الصور لتكون بحجم متناغم في جميع أنحاء الموقع */
+
+.image-gallery img, .product-card img, .leistung-card img {
+    width: 100%; /* اجعل الصور تأخذ عرض الحاوية */
+    height: 250px; /* حدّد ارتفاع موحد لكل الصور */
+    object-fit: cover; /* التأكد من تناسق الصورة وعدم تشويهها */
+    border-radius: 8px; /* إضافة حواف مستديرة للصور */
+    transition: transform 0.3s ease; /* إضافة تأثير عند التفاعل مع الصور */
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+.image-gallery img:hover, .product-card img:hover, .leistung-card img:hover {
+    transform: scale(1.05); /* تأثير تكبير عند التفاعل مع الصور */
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #003366; /* الأزرق الداكن */
-    color: white;
-    padding: 30px 40px;
-}
-
-header .logo h1 {
-    font-size: 40px;
-    color: #0099cc; /* الأزرق الفاتح */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 25px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #0099cc; /* الأزرق الفاتح */
-}
-
-.hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 150px 0;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-    letter-spacing: 3px;
-}
-
-.hero-content p {
-    font-size: 25px;
-    margin-bottom: 30px;
-}
-
-.cta-btn {
-    background-color: #0099cc; /* الأزرق الفاتح */
-    padding: 15px 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    font-size: 22px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #007bb5; /* اللون الأزرق الغامق */
-}
-
-.leistungen {
-    padding: 80px 0;
-    text-align: center;
-    background-color: #e6f2ff;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* تخصيص بطاقات الخدمات */
 .leistung-card {
     background-color: #fff;
     padding: 40px;
@@ -103,76 +23,65 @@ header .logo h1 {
     text-align: center;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.leistung-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* إخفاء أي جزء من الصورة قد يتجاوز البطاقة */
 }
 
 .leistung-card i {
     font-size: 50px;
-    color: #0099cc;
+    color: #00048f; /* اللون الجديد الأزرق */
     margin-bottom: 20px;
 }
 
-.gallery {
-    background-color: #fff;
-    padding: 80px 0;
+/* تخصيص تنسيق الصور في صفحة الهيرو */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
 }
 
-.image-gallery {
+/* تخصيص الظهر في صفحة المنتجات */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #00048f;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* التأكد من تنسيق الصور في كل أقسام المعرض */
+.gallery, .product-cards, .leistung-card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
-}
-
-.image-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.05);
-}
-
-.kontakt {
-    background-color: #003366; /* الأزرق الداكن */
-    color: white;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.kontakt p {
-    font-size: 22px;
-    margin: 10px 0;
-}
-
-footer {
-    background-color: #003366; /* الأزرق الداكن */
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.social-media {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-media li {
-    margin: 0 15px;
-}
-
-.social-media a {
-    color: white;
-    font-size: 30px;
-    transition: color 0.3s ease;
-}
-
-.social-media a:hover {
-    color: #0099cc; /* الأزرق الفاتح */
 }
