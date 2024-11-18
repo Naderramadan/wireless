@@ -1,9 +1,17 @@
-/* تنسيق النصوص */
-body {
+/* تخصيص اسم الشركة */
+.company-name {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.company-name h1 {
     font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: white;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* الشريط العلوي */
@@ -11,11 +19,13 @@ body {
     background-color: #00048f;
     padding: 15px;
     text-align: center;
+    position: relative;
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navbar ul li {
@@ -29,161 +39,53 @@ body {
     font-size: 18px;
 }
 
-/* الهيرو */
+/* Hero Section */
 #hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: white;
-    padding: 150px 0;
     text-align: center;
+    padding: 100px 0;
 }
 
-.hero-content h1 {
-    font-size: 48px;
+#hero h1 {
+    font-size: 50px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 24px;
+#hero p {
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
 .cta-btn {
     background-color: #00048f;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
+    font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
 }
 
-.cta-btn:hover {
-    background-color: #333;
-}
-
-/* تخصيص المنتجات */
-#produkte {
-    padding: 50px 0;
-    text-align: center;
-    background-color: white;
-}
-
+/* المنتجات */
 .product-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.product-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 10%;
 }
 
 .product-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.product-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.product-card img:hover {
+    transform: scale(1.1);
 }
 
 .product-card h3 {
-    margin: 20px 0;
-    font-size: 18px;
-    color: #00048f;
-}
-
-.product-card p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* تخصيص البطاقات الخدمات */
-.leistung-card {
-    background-color: #fff;
-    padding: 40px;
-    margin: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.leistung-card i {
-    font-size: 50px;
-    color: #00048f; 
-    margin-bottom: 20px;
-}
-
-.leistung-card:hover {
-    transform: scale(1.05);
-}
-
-/* تخصيص الصور */
-.product-card img, .leistung-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* تخصيص الفوتر */
-footer {
-    background-color: #00048f;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.social-media {
-    list-style: none;
-    padding: 0;
-}
-
-.social-media li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-media li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.social-media li a:hover {
-    color: #ddd;
-}
-
-/* تخصيص الأجهزة المحمولة */
-@media (max-width: 768px) {
-    .navbar ul {
-        text-align: center;
-    }
-
-    .product-cards {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .leistung-card {
-        width: 45%;
-    }
-
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-}
+    font-size: 22px;
+    font
