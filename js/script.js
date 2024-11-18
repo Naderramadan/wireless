@@ -1,8 +1,4 @@
-// Script for "Back to Top" Button functionality
-document.querySelector('.back-to-top').addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+// Placeholder for JavaScript functionality
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Website loaded successfully.");
 });
