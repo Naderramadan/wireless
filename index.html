@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boden Eleganz - Ihr Partner für hochwertige Bodenbeläge und Malerarbeiten">
+    <meta name="description" content="Boden Eleganz - Hochwertige Bodenbeläge und Malerarbeiten">
     <meta name="keywords" content="Bodenbeläge, Malerarbeiten, Holz, Innenräume, Eleganz">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" href="favicon.ico">
     <title>Boden Eleganz - Bodenbeläge und Malerarbeiten</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Header -->
     <header>
         <div class="logo">
             <h1>Boden Eleganz</h1>
@@ -29,39 +30,38 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Willkommen bei Boden Eleganz</h1>
-            <p>Exquisite Bodenbeläge und Malerarbeiten für Ihr Zuhause</p>
-            <a href="#leistungen" class="cta-btn">Unsere Dienstleistungen</a>
+            <h1 data-aos="fade-up">Willkommen bei Boden Eleganz</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Exquisite Bodenbeläge und Malerarbeiten für Ihr Zuhause</p>
+            <a href="#leistungen" class="cta-btn" data-aos="fade-up" data-aos-delay="400">Unsere Dienstleistungen</a>
         </div>
     </section>
 
     <!-- Leistungen Section -->
     <section id="leistungen" class="leistungen">
         <div class="container">
-            <h2>Unsere Leistungen</h2>
-            <p>Wir bieten professionelle Dienstleistungen für Bodenbeläge und Malerarbeiten in ganz Deutschland.</p>
-            <div class="leistung-card">
+            <h2 data-aos="fade-right">Unsere Leistungen</h2>
+            <p data-aos="fade-right" data-aos-delay="200">Professionelle Dienstleistungen für Bodenbeläge und Malerarbeiten.</p>
+            <div class="leistung-card" data-aos="zoom-in" data-aos-delay="300">
                 <i class="fas fa-paint-roller"></i>
                 <h3>Malerarbeiten</h3>
-                <p>Professionelle Malerarbeiten für Ihre Innenräume.</p>
+                <p>Hochwertige Innenraumgestaltung durch unsere erfahrenen Maler.</p>
             </div>
-            <div class="leistung-card">
+            <div class="leistung-card" data-aos="zoom-in" data-aos-delay="400">
                 <i class="fas fa-cogs"></i>
                 <h3>Bodenbeläge</h3>
-                <p>Hochwertige Holz- und Vinylböden für jedes Zuhause.</p>
+                <p>Elegante Holz- und Vinylböden für eine stilvolle Raumgestaltung.</p>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Galerie Section -->
     <section id="galerie" class="gallery">
         <div class="container">
-            <h2>Galerie</h2>
+            <h2 data-aos="fade-right">Galerie</h2>
             <div class="image-gallery">
-                <img src="images/01.jpg" alt="Holzarbeit 1">
-                <img src="images/02.jpg" alt="Holzarbeit 2">
-                <img src="images/03.jpg" alt="Holzarbeit 3">
-                <img src="images/04.jpg" alt="Holzarbeit 4">
+                <a href="images/02.jpg" data-lightbox="gallery" data-title="Holzarbeit 2"><img src="images/02.jpg" alt="Holzarbeit 2"></a>
+                <a href="images/03.jpg" data-lightbox="gallery" data-title="Holzarbeit 3"><img src="images/03.jpg" alt="Holzarbeit 3"></a>
+                <a href="images/04.jpg" data-lightbox="gallery" data-title="Holzarbeit 4"><img src="images/04.jpg" alt="Holzarbeit 4"></a>
             </div>
         </div>
     </section>
@@ -69,27 +69,38 @@
     <!-- Kontakt Section -->
     <section id="kontakt" class="kontakt">
         <div class="container">
-            <h2>Kontakt</h2>
-            <p>Wenn Sie Interesse an unseren Dienstleistungen haben, kontaktieren Sie uns bitte.</p>
-            <p>Telefon: +49 123 456789</p>
-            <p>Email: info@bodeneleganz.de</p>
+            <h2 data-aos="fade-right">Kontakt</h2>
+            <form action="#" method="post" data-aos="fade-up" data-aos-delay="200">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+                <button type="submit" class="cta-btn">Absenden</button>
+            </form>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Boden Eleganz | Alle Rechte vorbehalten</p>
             <ul class="social-media">
-                <li><a href="#" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" class="social-icon twitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="social-icon linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#" class="social-icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
