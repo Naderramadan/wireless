@@ -1,0 +1,157 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header .navbar {
+    text-align: center;
+}
+
+header .navbar ul {
+    list-style-type: none;
+}
+
+header .navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .cta-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Leistungen Section */
+.leistungen {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.leistungen .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.leistungen .leistung-card {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leistungen .leistung-card i {
+    font-size: 3rem;
+    color: #ff6600;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.gallery .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-media li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer .back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leistungen .leistung-card {
+        width: 100%;
+    }
+
+    .gallery .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
