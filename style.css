@@ -26,7 +26,7 @@ header {
 }
 
 header .logo h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -36,7 +36,7 @@ header .logo h1 {
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navbar ul li a {
@@ -44,11 +44,12 @@ header .logo h1 {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 .navbar ul li a:hover {
     color: #ffa500;
+    text-decoration: underline;
 }
 
 /* تنسيق قسم hero */
@@ -61,6 +62,7 @@ header .logo h1 {
     color: #fff;
     text-align: center;
     padding: 0 20px;
+    position: relative;
 }
 
 .hero-content {
@@ -72,13 +74,13 @@ header .logo h1 {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 25px;
 }
 
@@ -101,7 +103,7 @@ header .logo h1 {
 
 /* تنسيق قسم "Leistungen" */
 .leistungen {
-    padding: 50px 0;
+    padding: 60px 20px;
     background-color: #f9f9f9;
 }
 
@@ -109,45 +111,50 @@ header .logo h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
+    color: #333;
 }
 
 .leistung-card {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
 }
 
 .leistung-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .leistung-card i {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffa500;
     margin-bottom: 15px;
 }
 
 .leistung-card h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
 .leistung-card p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* تنسيق قسم "Galerie" */
 .gallery {
-    padding: 50px 0;
+    padding: 60px 20px;
 }
 
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .image-gallery img {
@@ -155,25 +162,27 @@ header .logo h1 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-gallery img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* تنسيق قسم "Kontakt" */
 .kontakt {
-    padding: 50px 0;
+    padding: 60px 20px;
     background-color: #fff;
 }
 
 .contact-info {
     text-align: center;
+    font-size: 1.2rem;
+    color: #555;
 }
 
 .contact-info p {
-    font-size: 1.2rem;
     margin: 15px 0;
 }
 
@@ -186,11 +195,12 @@ header .logo h1 {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 .contact-info a:hover {
     color: #ffa500;
+    text-decoration: underline;
 }
 
 /* تنسيق الفوتر */
@@ -213,12 +223,12 @@ footer p {
 }
 
 .social-media li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .social-media a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transition: color 0.3s;
 }
 
