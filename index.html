@@ -1,154 +1,100 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boden Eleganz - Ihr Partner für hochwertige Bodenbeläge und Malerarbeiten">
+    <meta name="keywords" content="Bodenbeläge, Malerarbeiten, Holz, Innenräume, Eleganz">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Boden Eleganz - Bodenbeläge und Malerarbeiten</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>Boden Eleganz</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero">Startseite</a></li>
+                <li><a href="#leistungen">Unsere Leistungen</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 40px;
-}
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Willkommen bei Boden Eleganz</h1>
+            <p>Exquisite Bodenbeläge und Malerarbeiten für Ihr Zuhause</p>
+            <a href="#leistungen" class="cta-btn">Unsere Dienstleistungen</a>
+        </div>
+    </section>
 
-header .logo h1 {
-    font-size: 30px;
-    color: #f39c12;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
+    <!-- Leistungen Section -->
+    <section id="leistungen" class="leistungen">
+        <div class="container">
+            <h2>Unsere Leistungen</h2>
+            <p>Wir bieten professionelle Dienstleistungen für Bodenbeläge und Malerarbeiten in ganz Deutschland.</p>
+            <div class="leistung-card">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Malerarbeiten</h3>
+                <p>Professionelle Malerarbeiten für Ihre Innenräume.</p>
+            </div>
+            <div class="leistung-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Bodenbeläge</h3>
+                <p>Hochwertige Holz- und Vinylböden für jedes Zuhause.</p>
+            </div>
+        </div>
+    </section>
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="image-gallery">
+                <img src="images/02.jpg" alt="Holzarbeit 2">
+                <img src="images/03.jpg" alt="Holzarbeit 3">
+                <img src="images/04.jpg" alt="Holzarbeit 4">
+                <img src="images/06.jpg" alt="Holzarbeit 6">
+                <img src="images/07.jpg" alt="Holzarbeit 7">
+                <img src="images/08.jpg" alt="Holzarbeit 8">
+                <img src="images/09.jpg" alt="Holzarbeit 9">
+                <img src="images/10.jpg" alt="Holzarbeit 10">
+                <img src="images/11.jpg" alt="Holzarbeit 11">
+                <img src="images/12.jpg" alt="Holzarbeit 12">
+                <img src="images/13.jpg" alt="Holzarbeit 13">
+            </div>
+        </div>
+    </section>
 
-.navbar ul li {
-    margin-left: 20px;
-}
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Wenn Sie Interesse an unseren Dienstleistungen haben, kontaktieren Sie uns bitte.</p>
+            <p>Telefon: +49 123 456789</p>
+            <p>Email: info@bodeneleganz.de</p>
+        </div>
+    </section>
 
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Boden Eleganz | Alle Rechte vorbehalten</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 
-.navbar ul li a:hover {
-    color: #f39c12;
-}
-
-.hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 120px 0;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.cta-btn {
-    background-color: #f39c12;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #e67e22;
-}
-
-.leistungen {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.leistung-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.leistung-card:hover {
-    transform: translateY(-10px);
-}
-
-.leistung-card i {
-    font-size: 40px;
-    color: #f39c12;
-    margin-bottom: 15px;
-}
-
-.gallery {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.image-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.kontakt {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
+    <script src="script.js"></script>
+</body>
+</html>
