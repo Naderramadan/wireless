@@ -13,7 +13,7 @@ body {
 
 /* Hero Section Background */
 #hero {
-    background-image: url('background.jpg');
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -32,10 +32,12 @@ body {
 
 #hero h1 {
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 #hero p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .cta-btn {
@@ -46,7 +48,6 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    margin-top: 20px;
 }
 
 .cta-btn:hover {
@@ -76,53 +77,61 @@ body {
     color: #ff6f61;
 }
 
-/* Products Section */
-#produkte {
+/* Gallery Section */
+#galerie {
     padding: 50px 20px;
     text-align: center;
 }
 
-#produkte .section-header h2 {
+#galerie .section-header h2 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-#produkte .section-header p {
+#galerie .section-header p {
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
-.product-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.product-card {
-    margin: 15px;
-    width: 300px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 15px;
+.image-gallery img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+/* Contact Section */
+#kontakt {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#kontakt h2 {
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.product-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+#kontakt p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
-.product-card p {
-    font-size: 1rem;
-    color: #555;
+#kontakt ul {
+    list-style: none;
+    padding: 0;
+}
+
+#kontakt ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 /* Footer Section */
@@ -135,23 +144,4 @@ footer {
 
 footer p {
     margin-bottom: 10px;
-}
-
-footer .social-media {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-footer .social-media li {
-    margin: 0 10px;
-}
-
-footer .social-media li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .social-media li a:hover {
-    color: #ff6f61;
 }
