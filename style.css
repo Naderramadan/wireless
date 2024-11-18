@@ -88,4 +88,46 @@
 
 .product-card h3 {
     font-size: 22px;
-    font
+    font-weight: bold;
+}
+
+/* ايقونات الخدمات */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    font-size: 40px;
+    color: #00048f;
+    margin-bottom: 10px;
+}
+
+/* الفوتر */
+footer {
+    background-color: #00048f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: white;
+    font-size: 24px;
+}
